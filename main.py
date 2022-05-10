@@ -3,11 +3,11 @@ from datetime import datetime
 import time
 import smtplib
 
-MY_EMAIL = "stenberg.p.b@gmail.com"
-MY_PASSWORD = "##ThebigbadbearGmail89"
+MY_EMAIL = "youremail here"
+MY_PASSWORD = "your password here"
 
-MY_LONG = 18.068581
-MY_LAT = 59.329323
+MY_LONG = your long!
+MY_LAT = Your lat!
 
 MY_POSITION = MY_LONG, MY_LAT
 
@@ -69,7 +69,7 @@ while True:
             connection.starttls()
             connection.login(MY_EMAIL, MY_PASSWORD)
             connection.sendmail(from_addr=MY_EMAIL, 
-                                to_addrs="bjorn.p.stenberg@gmail.com",
+                                to_addrs="where to send notification@email.com",
                                 msg=email_message)
 
 # If the ISS is close to my current position,
